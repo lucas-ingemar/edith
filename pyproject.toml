@@ -1,0 +1,14 @@
+[project]
+name = "edith"
+version = "1.0.0"
+description = "Minimal Raspberry Pi display app showing photos, time, temperature (via Home Assistant), and Gothenburg tram departures, designed for the official 7'' touchscreen."
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "pillow>=12.1.1",
+    "pydantic>=2.12.5",
+    "pygame-ce>=2.5.7",
+    "python-dateutil>=2.9.0.post0",
+    "requests>=2.33.0",
+    "toml>=0.10.2",
+]

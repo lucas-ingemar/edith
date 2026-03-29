@@ -1,0 +1,17 @@
+[general]
+blur = true
+
+[immich]
+base_url = "https://immich.example.com/api"
+album_id = "youralbumid"
+show_date = true
+update_freq = 10
+
+[hass]
+base_url = "https://hass.example.com/api"
+sensor_id = "sensor.temp1"
+
+[vasttrafik]
+stop = "brunnsparken"
+platform = "a1"
+lines = [6, 10]

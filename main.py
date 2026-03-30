@@ -77,7 +77,7 @@ if __name__ == "__main__":
     temp_font = pygame.font.SysFont("DejaVu Sans", 30)
 
     immichCmp = Immich(cfg.immich, image_time_font)
-    hassCmp = Hass(cfg.hass, temp_font)
+    hassCmp = Hass(cfg.hass)
     timeCmp = Time(font, small_font)
     vtCmp = Vasttrafik(vt_font, cfg.vasttrafik)
 

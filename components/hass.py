@@ -25,7 +25,7 @@ class Hass(object):
 
     @classmethod
     def block_height(cls):
-        return 1
+        return 2
 
     def _update_temperature(self) -> None:
         self.logger.info("updating temperature")

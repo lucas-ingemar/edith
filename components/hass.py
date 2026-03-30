@@ -24,7 +24,7 @@ class Hass(object):
         self._update_temperature()
 
     @classmethod
-    def block_height(cls):
+    def block_count(cls):
         return 2
 
     def _update_temperature(self) -> None:

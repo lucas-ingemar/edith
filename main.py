@@ -30,7 +30,7 @@ def draw(screen: pygame.Surface, screenCfg: ScreenCfg, cfg: config.Config, immic
     screen.blit(timeSurface, (screenCfg.padding_x, screenCfg.padding_y + 0*screenCfg.block_height))
 
     # HASS
-    hassSurface = hassCmp.draw(screenCfg.block_width, screenCfg.block_height)
+    hassSurface = hassCmp.draw(screenCfg.block_width, screenCfg.block_height * hassCmp.block_count())
     screen.blit(hassSurface, (screenCfg.padding_x, screenCfg.padding_y + 4*screenCfg.block_height))
 
     # Vasttrafik

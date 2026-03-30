@@ -8,9 +8,9 @@ import time
 
 class ScreenCfg(object):
     def __init__(self):
-        self.menu_width = 185
-        self.padding_x = 20
-        self.padding_y = 20
+        self.menu_width = 175
+        self.padding_x = 15
+        self.padding_y = 15
         self.blocks = 15
         self.block_height = 0
         self.block_width = 0

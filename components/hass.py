@@ -45,6 +45,7 @@ class Hass(object):
         self._wind_gust = ""
         self._wind_unit= ""
         self._last_update = 0.0
+        self._surface = Surface((0,0))
 
         self._temp_font = SysFont("DejaVu Sans", 25)
         self._wind_font = SysFont("DejaVu Sans", 20)

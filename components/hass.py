@@ -24,6 +24,7 @@ _icon_map = {
 "windy": "󰖝",
 "windy-variant": "󰖞",
 "exceptional": "󰼸",
+"unavailable": "󰨹",
 }
 
 class HassConfig(BaseModel):
@@ -113,6 +114,5 @@ class Hass(object):
             self._update_temperature()
             self._update_smhi()
             self._last_update = time.time()
-            self._update_surface(width, height)
 
         return self._surface

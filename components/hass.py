@@ -118,8 +118,15 @@ class Hass(object):
 
     def draw(self, width: int, height: int) -> Surface:
         if time.time() - self._last_update > self._update_freq:
-            self._update_temperature()
-            self._update_smhi()
+            try:
+                self._update_temperature()
+            except Exception as e:
+                self.logger.error("cannot update temperature data: %s", e)
+            try:
+                self._update_smhi()
+            except Exception as e:
+                self.logger.error("cannot update smhi data: %s", e)
             self._last_update = time.time()
+            self._update_surface(width, height)
 
         return self._surface

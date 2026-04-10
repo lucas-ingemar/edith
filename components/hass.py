@@ -83,6 +83,12 @@ class Hass(object):
         resp = requests.get(url, headers=self.headers)
         resp.raise_for_status()
         data = resp.json()
+
+        self._weather_state = "unavailable"
+        self._wind = ""
+        self._wind_gust = ""
+        self._wind_unit = ""
+
         if "state" in data and "attributes" in data:
             self._weather_state = data["state"]
             if all(key in data["attributes"] for key in ["wind_speed", "wind_gust_speed", "wind_speed_unit"]):
